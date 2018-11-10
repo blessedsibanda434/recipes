@@ -7,3 +7,4 @@ store.dispatch(addIngredient('Omelette', 'Eggs', 3));
 
 
 console.log('This is great')
+alert('Niece Blade')

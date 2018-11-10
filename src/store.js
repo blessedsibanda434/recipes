@@ -20,7 +20,4 @@ export const store = createStore(
     rootReducer,
     initialState
 );
-
-window.store = store;
-
 export default store;

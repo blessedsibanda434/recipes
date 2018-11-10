@@ -10,11 +10,13 @@ const config = {
     },
     output: {
         filename: 'bundle.js',
-        path: path.resolve(__dirname, 'dist')
+        path: path.resolve(__dirname, 'dist'),
+        publicPath: '/'
     },
     devServer: {
-        contentBase: path.resolve(__dirname, "dist/assets/media"),
+        //contentBase: path.resolve(__dirname, "dist/assets/media"),
         //stats: 'errors-only',
+        contentBase: './dist',
         open: true,
         port: 3000,
         compress: true
