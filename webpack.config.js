@@ -14,7 +14,7 @@ const config = {
     },
     devServer: {
         contentBase: path.resolve(__dirname, "dist/assets/media"),
-        stats: 'errors-only',
+        //stats: 'errors-only',
         open: true,
         port: 3000,
         compress: true

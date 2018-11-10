@@ -1,22 +1,9 @@
-import { createStore } from 'redux';
+import store from './store'
+import { addRecipe } from './actions/recipes'
+import { addIngredient } from './actions/ingredients'
 
-const initialState = {
-    recipes: [
-        {
-            name: 'Omelette'
-        }
-    ],
-    ingredients: [
-        {
-            recipe: 'Omelette',
-            name: 'Egg',
-            quantity: 2
-        }
-    ]
-};
+store.dispatch(addRecipe('Pancake'));
+store.dispatch(addIngredient('Omelette', 'Eggs', 3));
 
-const reducer = (state, action) => state;
-const store = createStore(reducer, initialState);
 
-//window.store = store;
-console.log('THis is great')
+console.log('This is great')
